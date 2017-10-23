@@ -1,0 +1,86 @@
+* {
+    background-color: #E3E3E3;
+    color: #330060;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+.wrapper {
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
+.messages p {
+    color: darkred;
+    background-color: #FABFC9;
+    margin: 0px;
+    padding: 5px;
+    font-size: 20pt;
+}
+
+form {
+    width: 315px;
+    height: auto;
+    margin-top: 10px;
+    border: 1px solid #330060;
+    box-shadow: 0px 1px 0px 1px #545454;
+    border-radius: 5px;
+    padding: 25px;
+    vertical-align: left;
+}
+
+.field_input{
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+input {
+    display: block;
+    line-height: 12px;
+    width: 300px;
+    font-size: 12pt;
+    padding: 5px;
+    border: 1px solid #6A6A6A;
+    box-shadow: 1px 1px 1px black;
+}
+
+label {
+    padding: 0px;
+    display: block;
+    font-weight: bold;
+    font-size: 12pt;
+    display: block;
+}
+.button {
+    width: 150px;
+    margin-top: 10px;
+    background-color: #330060;
+    color: #E3E3E3;
+    border: 1px solid #0D001A;
+    border-radius: 5px;
+    box-shadow: 0px;
+    font-weight: lighter;
+    font-size: 12pt;
+    display: block;
+    vertical-align: center;
+}
+
+h1 {
+    padding: 0px;
+    font-weight: lighter;
+}
+
+h4 {
+    text-align: center;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    margin-top: -5px;
+    color: #545454;
+    font-weight: bolder;
+}

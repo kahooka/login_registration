@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'login/css/main.css' %}" media="screen" title="no title"  charset="utf-8">
+    </head>
+    <body>
+        {% if messages %}
+        <div class="messages">
+            {% for message in messages %}
+            <p>{{ message }}</p>
+            {% endfor %}
+        </div>
+        {% endif %}
+        <br>
+        <div class="wrapper">
+            <h1>Welcome.</h1>
+            <form action="/login" method="POST">
+                <h4>Please log in.</h4>
+                {% csrf_token %}
+                <div class="field_input">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email">
+                </div>
+                <div class="field_input">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password">
+                </div>
+                <input type="submit" value='Login' class="button">
+            </form>
+            <br><br><br>
+            <h1>New User?</h1>
+            <form action="/register" method="POST">
+                <h4>Register here.</h4>
+                {% csrf_token %}
+                <div class="field_input">
+                    <label for="first_name">First Name:</label>
+                    <input type="text" name="first_name">
+                </div>
+                <div class="field_input">
+                    <label for="last_name">Last Name:</label>
+                    <input type="text" name="last_name">
+                </div>
+                <div class="field_input">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email">
+                </div>
+                <div class="field_input">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password">
+                </div>
+                <div class="field_input">
+                    <label for="password_confirm">Confirm Password:</label>
+                    <input type="password" name="password_confirm">
+                </div>
+                <input type="submit" value='Register' class="button">
+            </form>
+        </div>
+    </body>
+</html>

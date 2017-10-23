@@ -1,0 +1,59 @@
+* {
+    background-color: #E3E3E3;
+    color: #330060;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+.messages p {
+    margin-top: 10px;
+    color: darkgreen;
+    background-color: #D3FFD3;
+    margin: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 20px;
+    font-size: 14pt;
+}
+
+h1 {
+    margin-top: 10px;
+    padding-left: 20px;
+    font-weight: lighter;
+
+}
+
+h3 {
+    margin-top: 10px;
+    padding-left: 20px;
+    font-weight: lighter;
+}
+
+table {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-family: arial, sans-serif;
+    border: 2px solid black;
+    width: 600px;
+    vertical-align: center;
+    border-radius: 4px;
+}
+
+td, th {
+    width: 33%;
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 4px;
+}
+th{
+    background-color: #464646;
+    color: white;
+    font-weight: lighter;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
